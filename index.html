@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+    <h1>My Neighbor ToDoro[sic] List</h1>
+
+    <form action="" id="makeNewItem"></form>
+    <label for="inputToDoField">New ToDoro</label>
+    <br><br>
+    <input type="text" id="inputToDoField" name="inputToDoField", placeholder="Your Todoro is waiting...">
+    <br><br>
+    <input type="submit" id="newTodoButton" value="Commit to Doing this ToDoro">
+    <br><br><br>
+    </header>
+    
+    <p id="directions">Click on an active ToDoro to move it to completed. Click on a completed ToDoro remove it entirely.</p>
+    
+    <main>    
+        <div id="activeTodos" class = "mainTodoBox">
+            <h4>Active ToDoro(s)</h4>
+        </div>
+        <div id="completedTodos" class = "mainTodoBox">
+            <h4>Completed ToDoro(s)</h4>
+        </div>
+    </main>
+
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
