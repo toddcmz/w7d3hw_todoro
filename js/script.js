@@ -21,7 +21,7 @@ function postNewTodo(thisText){
     const img = document.createElement('img')
     p.innerText = thisText
     p.className = "todoTextStyle"
-    img.src = "/static/totoro.png"
+    img.src = "./static/totoro.png"
     img.className = "totoroImg"
     div.className = "todoBoxStyle"
     div.append(img,p)
@@ -30,7 +30,7 @@ function postNewTodo(thisText){
     div.addEventListener('click', () => {
         if (div.whereAmI === 0){
             div.remove()
-            img.src = "/static/doneToro.png"
+            img.src = "./static/doneToro.png"
             document.getElementById('completedTodos').append(div)
             div.whereAmI = 1
         }else{
